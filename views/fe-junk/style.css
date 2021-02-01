@@ -1,0 +1,25 @@
+
+h1 {
+    color: pink;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+li {
+    color: pink;
+}
+
+.padder {
+    padding-top: 4em;
+    padding-bottom: 1em;
+    color: pink;
+}
+
+.thumbnail {
+    margin: 0.5em;
+    width: 5.5em;
+}
+
+img {
+    width: 100%;
+}
