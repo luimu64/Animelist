@@ -4,4 +4,3 @@ $user = "databaseusername";
 $passwd = "databasepassword";
 
 $pdo = new PDO($dsn, $user, $passwd);
-?> 

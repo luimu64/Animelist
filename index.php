@@ -1,21 +1,31 @@
 <?php
-session_start(); 
 
-if(isset($_GET["action"])) $action = $_GET["action"];
-else $action ="index";
+define("LISTOWNERNAME", "luimu");
+
+session_start();
+
+if (isset($_GET["action"])) $action = $_GET["action"];
+else $action = "index";
 
 $method = strtolower($_SERVER["REQUEST_METHOD"]);
 
 require "./controllers/animelist_controller.php";
+require "./controllers/user_controller.php";
+require "./libraries/helper.php";
 
-switch($action) {
+switch ($action) {
     case "index":
-    indexcontroller();
-    break;
+        indexController();
+        break;
+
+    case "login":
+        loginController();
+        break;
+
+    case "logout":
+        logoutController();
+        break;
 
     default:
-    echo "404";
+        echo "404";
 }
-?>
-
-

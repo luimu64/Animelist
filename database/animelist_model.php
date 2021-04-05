@@ -11,5 +11,3 @@ function getEveryAnime()
     $animelist = $stm->fetchAll(PDO::FETCH_ASSOC);
     return $animelist;
 }
-
-?>
