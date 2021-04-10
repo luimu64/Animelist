@@ -25,3 +25,12 @@ function isLoggedIn()
 {
     return isset($_SESSION['username'], $_SESSION['id']) && ($_SESSION['session_id'] == session_id()) or false;
 }
+
+function search_anime()
+{
+    $animefile = fopen("anime-titles.dat", "r") or die("Unable to open title list!");
+    $searchword = "/.+" . readline() . ".+/i";
+    preg_match_all($searchword, fread($animefile, filesize("anime-titles.dat")), $matches);
+    var_dump($matches[0]);
+    fclose($animefile);
+}

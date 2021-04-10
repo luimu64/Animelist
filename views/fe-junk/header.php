@@ -11,7 +11,7 @@
   <title><?= LISTOWNERNAME ?>'s anime list</title>
 </head>
 
-<body class="bg-dark" onload="scroll();">
+<body id="bso" class="bg-dark" onload="scroll();">
 
   <header id="header-layout">
     <?php if (isLoggedIn()) { ?>
@@ -37,3 +37,8 @@
       </ul>
     <?php } ?>
   </header>
+  <?php if (isset($message)) { ?>
+    <div class="alert alert-danger text-center" role="alert">
+      <?= $message ?>
+    </div>
+  <?php } ?>

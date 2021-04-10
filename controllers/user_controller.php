@@ -14,6 +14,7 @@ function loginController()
             $_SESSION['session_id'] = session_id();
             header("Location: /");
         } else {
+            $message = "Wrong username or password!";
             require "views/login.view.php";
         }
     } else {

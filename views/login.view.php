@@ -1,7 +1,7 @@
 <?php
 include "./views/fe-junk/header.php";
 //for first time password generation use this 
-//echo hashPassword("test");
+//echo "<input type'text' value=" . hashPassword("test") . ">";
 ?>
 
 <div class="container">
