@@ -31,3 +31,14 @@ img {
 .nav-link:hover {
     color: rgb(255, 148, 166);
 }
+
+#result {
+    margin-top: 1em;
+}
+#result a{
+    color: pink;
+}
+
+#result a:hover {
+    color: rgb(255, 148, 166);
+}
