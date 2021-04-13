@@ -35,10 +35,10 @@ img {
 #result {
     margin-top: 1em;
 }
-#result a{
+#result button{
     color: pink;
 }
 
-#result a:hover {
+#result button:hover {
     color: rgb(255, 148, 166);
 }

@@ -25,8 +25,3 @@ function isLoggedIn()
 {
     return isset($_SESSION['username'], $_SESSION['id']) && ($_SESSION['session_id'] == session_id()) or false;
 }
-
-function fetchdetails($aid)
-{
-    echo "http://api.anidb.net:9001/httpapi?request=anime&client=" . CLIENT . "&clientver=" . CLIENTVER . "&protover=1&aid=$aid";
-}

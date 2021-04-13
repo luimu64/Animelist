@@ -25,8 +25,10 @@ function search_anime()
     fclose($animefile);
     $i = 0;
     foreach ($matches[0] as $result) {
-        $aid = explode("|", $result)[0];
-        echo "<a class='list-group-item bg-secondary' href='index.php?aid=$aid'>$result</a>";
+        $exploded = explode("|", $result);
+        $aid = $exploded[0];
+        $name = $exploded[3];
+        echo "<button class='list-group-item bg-secondary' onclick=fetchAnime($aid)>$name</button>";
         if ($i < 10) $i += 1;
         else break;
     }
